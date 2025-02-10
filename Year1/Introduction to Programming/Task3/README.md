@@ -1,5 +1,5 @@
 # Origami Layers Problem
-Short summary/translation of the task:  
+## Short task summary/tranlsation:  
 This program is designed for origami enthusiasts to study the number of layers in a given point of a cleverly folded piece of paper. The program should read the description of various origami sheets and queries about the number of layers in specified points of these sheets.
 ## Problem Description:
 
