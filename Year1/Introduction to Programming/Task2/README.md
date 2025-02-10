@@ -1,5 +1,5 @@
 # Motel Trip Problem
-A short summary/translation of the task:  
+## Short task summary/tranlsation:  
 Along a highway, which we can imagine as a straight line, there are n motels. The motels are numbered sequentially from 1 to n along the highway. Each motel belongs to a particular motel chain, represented by a number in the range from 1 to n.
 
 Bajtek told Bitek that during his trip along the highway, he stopped at three different motels, each from a different chain. Bitk is curious about the distances between these motels. Specifically, he wants to find the nearest and farthest triplet of motels located in the following order along the highway, where each motel belongs to a different chain:
