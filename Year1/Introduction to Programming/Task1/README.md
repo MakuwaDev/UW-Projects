@@ -33,5 +33,7 @@ In measurements of physical quantities, the results are always subject to some e
 ## Additional Information:
 
     Operations on approximate values are assumed to be monotonic due to the containment of possible value sets.
-    The operations should close the result sets (i.e., if the result is an open interval, it is treated as a closed interval).
-    Some edge cases in floating-point operations may arise, such as dividing by zero or dealing with positive/negative zeros.
+    The operations should close the result sets  
+    (i.e., if the result is an open interval, it is treated as a closed interval).
+    Some edge cases in floating-point operations may arise,  
+    such as dividing by zero or dealing with positive/negative zeros.
