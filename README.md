@@ -10,8 +10,10 @@ This is a showcase of my work and abilities, not a development history - project
 📦 UW Projects  
  ┣ 📂 Year1  
  ┃ ┣ 📂 Course1  
- ┃ ┃ ┣ 📜 Task.pdf (or Task.md)  
- ┃ ┃ ┣ 📂 Project  
+ ┃ ┃ ┣ 📂 Task1  
+ ┃ ┃ ┃ ┣ 📜 Task.pdf (or Task.md)  
+ ┃ ┃ ┃ ┣ 📂 Project  
+ ┃ ┃ ┣ 📂 Task2  
  ┃ ┣ 📂 Course2  
  ┣ 📂 Year2  
 
