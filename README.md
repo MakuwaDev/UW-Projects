@@ -6,6 +6,11 @@ at the University of Warsaw, organized by semester and course.
 # 🚀 Purpose:
 This is a showcase of my work and abilities, not a development history—projects were added after submission.
 
+
+
+
+
+
 # 📂 Structure
 📦 UW Projects
  ┣ 📂 Year1
