@@ -3,7 +3,8 @@ Short summary/translation of the task:
 This program simulates events that occur during a working day at an office with multiple service windows. Each window has a queue of customers, and when an officer is available, they serve the first customer in the queue. Customers leave the office after being served. The program also handles various operations as described by the following functions.
 ## Functions:
 
-    otwarcie_urzedu(int m) – Called once at the start. Informs that there are m windows at the office, and no customers are in the queues yet.
+    otwarcie_urzedu(int m) – Called once at the start. Informs that there are m windows at the office,  
+        and no customers are in the queues yet.
 
     *interesant nowy_interesant(int k) – A new customer enters the office and joins the queue for window k.  
         This function creates and returns a pointer to the customer.
@@ -19,11 +20,15 @@ This program simulates events that occur during a working day at an office with 
     void zamkniecie_okienka(int k1, int k2) – The officer at window k1 goes on a break.  
         All customers in the queue of k1 are transferred to the queue of window k2 in the same order they were standing at k1.
 
-    *std::vector<interesant> fast_track(interesant i1, interesant i2) – Opens a special window that serves all customers between i1 and i2 (inclusive). This group of customers is served and immediately leaves the office.
+    *std::vector<interesant> fast_track(interesant i1, interesant i2) – Opens a special window that serves all customers  
+        between i1 and i2 (inclusive). This group of customers is served and immediately leaves the office.
 
-    void naczelnik(int k) – The office manager orders the customers at window k to reverse the order of their queue. If there is at most one customer, this operation has no effect.
+    void naczelnik(int k) – The office manager orders the customers at window k to reverse the order of their queue.  
+        If there is at most one customer, this operation has no effect.
 
-    *std::vector<interesant > zamkniecie_urzedu() – Called at the end of the office day. All remaining customers in the queues are served, and the office closes. The function returns a vector of all customers who are still in the office at that time.
+    *std::vector<interesant > zamkniecie_urzedu() – Called at the end of the office day.  
+        All remaining customers in the queues are served, and the office closes.  
+        The function returns a vector of all customers who are still in the office at that time.
 
 ## Requirements:
 
