@@ -1,4 +1,4 @@
-University of Warsaw Projects Repository 🎓
+#University of Warsaw Projects Repository 🎓
 
 This repository contains projects and assignments completed as part of Computer Science Bachelor's Studies at the University of Warsaw, organized by semester and course.
 
