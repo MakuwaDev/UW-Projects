@@ -1,5 +1,5 @@
 # Office Queues Simulation Problem
-Short summary/translation of the task:  
+## Short task summary/tranlsation:  
 This program simulates events that occur during a working day at an office with multiple service windows. Each window has a queue of customers, and when an officer is available, they serve the first customer in the queue. Customers leave the office after being served. The program also handles various operations as described by the following functions.
 ## Functions:
 
