@@ -21,7 +21,8 @@ Each sheet is described in one of the following forms:
     points (x1, y1) and (x2, y2). When a pin is inserted on the folded sheet:
         If the pin is on the right side of the folding line, it adds 0 layers.
         If the pin is exactly on the folding line, the layer count will match the layers of the sheet before folding.
-        If the pin is on the left side of the folding line, the layer count is the sum of the layers before folding and the layers of the folded part.
+        If the pin is on the left side of the folding line,  
+        the layer count is the sum of the layers before folding and the layers of the folded part.
 
 The queries have the following format:
 
@@ -37,21 +38,21 @@ The program should output the number of layers for each query.
 
 ### Input:
 
-4 5
-P 0 0 2.5 1
-Z 1 0.5 0 0.5 1
-K 0 1 5
-Z 3 0 1 -1 0
-1 1.5 0.5
-2 1.5 0.5
-2 0 0.5
-3 4 4
-4 4 4
+4 5  
+P 0 0 2.5 1  
+Z 1 0.5 0 0.5 1  
+K 0 1 5  
+Z 3 0 1 -1 0  
+1 1.5 0.5  
+2 1.5 0.5  
+2 0 0.5  
+3 4 4  
+4 4 4  
 
 ### Output:
 
-1
-0
-2
-1
-2
+1  
+0  
+2  
+1  
+2  
