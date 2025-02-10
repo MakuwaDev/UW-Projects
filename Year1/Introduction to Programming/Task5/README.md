@@ -1,5 +1,5 @@
 # Efficient Querying of a Number Sequence
-Short summary/translation of the task:  
+## Short task summary/translation:  
 Implement a data structure that allows efficient querying of a sequence of numbers. Furthermore, the elements of the sequence can be revealed online, meaning that new elements may be added dynamically.
 
 For a given sequence X=x0​,x1​,...,xn−1​, we are interested in the following function:
