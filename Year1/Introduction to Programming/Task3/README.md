@@ -10,11 +10,15 @@ The input consists of two numbers n and q:
 
 Each sheet is described in one of the following forms:
 
-    Rectangle (P x1 y1 x2 y2): Represents a closed rectangle with sides parallel to the coordinate axes. The bottom-left corner is at point (x1, y1) and the top-right corner is at (x2, y2). A pin inserted inside or on the edges of this rectangle increases the layer count by 1 for that point.
+    Rectangle (P x1 y1 x2 y2): Represents a closed rectangle with sides parallel to the coordinate axes.  
+    The bottom-left corner is at point (x1, y1) and the top-right corner is at (x2, y2).  
+    A pin inserted inside or on the edges of this rectangle increases the layer count by 1 for that point.
 
-    Circle (K x y r): Represents a closed circle with center at (x, y) and radius r. A pin inserted inside or on the boundary of this circle increases the layer count by 1 for that point.
+    Circle (K x y r): Represents a closed circle with center at (x, y) and radius r.  
+    A pin inserted inside or on the boundary of this circle increases the layer count by 1 for that point.
 
-    Fold (Z k x1 y1 x2 y2): This represents a fold of the k-th origami sheet along a line passing through points (x1, y1) and (x2, y2). When a pin is inserted on the folded sheet:
+    Fold (Z k x1 y1 x2 y2): This represents a fold of the k-th origami sheet along a line passing through points (x1, y1) and (x2, y2).  
+    When a pin is inserted on the folded sheet:
         If the pin is on the right side of the folding line, it adds 0 layers.
         If the pin is exactly on the folding line, the layer count will match the layers of the sheet before folding.
         If the pin is on the left side of the folding line, the layer count is the sum of the layers before folding and the layers of the folded part.
