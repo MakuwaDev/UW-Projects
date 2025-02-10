@@ -8,12 +8,12 @@ This is a showcase of my work and abilities, not a development history—project
 
 # 📂 Structure
 📦 UW Projects  
- ┣ 📂 Year1
- ┃ ┣ 📂 Course1
- ┃ ┃ ┣ 📜 Task.pdf (or Task.md)
- ┃ ┃ ┣ 📂 Project
- ┃ ┣ 📂 Course2
- ┣ 📂 Year2
+ ┣ 📂 Year1  
+ ┃ ┣ 📂 Course1  
+ ┃ ┃ ┣ 📜 Task.pdf (or Task.md)  
+ ┃ ┃ ┣ 📂 Project  
+ ┃ ┣ 📂 Course2  
+ ┣ 📂 Year2  
 
 # 📝 Tasks & Assignments
 Each project includes the task description (in Polish). If the original task is from a restricted webpage, I provide a PDF copy or a summary.
