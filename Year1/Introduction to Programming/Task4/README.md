@@ -24,7 +24,8 @@ This program simulates events that occur during a working day at an office with 
 ## Requirements:
 
     Each customer is created dynamically with malloc, and their memory is freed by the user after leaving the office.
-    The time complexity for each function must be proportional to the size of the parameters and outputs, except for otwarcie_urzedu and zamkniecie_urzedu, which can use O(m) time complexity.
+    The time complexity for each function must be proportional to the size of the parameters and outputs,  
+    except for otwarcie_urzedu and zamkniecie_urzedu, which can use O(m) time complexity.
     The program should be free of memory leaks (checked using valgrind).
 
 ## Example:
