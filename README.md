@@ -4,7 +4,7 @@ This repository contains projects and assignments completed as part of Computer 
 at the University of Warsaw, organized by semester and course.
 
 # 🚀 Purpose
-This is a showcase of my work and abilities, not a development history—projects were added after submission.
+This is a showcase of my work and abilities, not a development history - projects were added after submission.
 
 # 📂 Structure
 📦 UW Projects  
