@@ -1,5 +1,5 @@
 # Guess the Number Game with Lies
-Short task summary/tranlsation:  
+## Short task summary/tranlsation:  
 Bolek is trying to guess the number `x` that Ala has chosen. Bolek can ask questions like "Is x < y?", and Ala can answer "Yes" or "No". However, Ala is allowed to lie up to `k` times in a single game. The goal for Bolek is to guess the number `x` using as little questions as possible.
 
 ## Library Interface:
