@@ -1,5 +1,5 @@
 # Arithmetic of Approximate Values
-A short summary/translation of the task:..
+A short summary/translation of the task:  
 In measurements of physical quantities, the results are always subject to some error, e.g., 5m ± 10%. We treat each such approximate value as a set of possible values. Implement a package for arithmetic operations on such approximate values that follows the provided interface in ary.h. Specifically, the package should include:
 ## Type Definition:
 
