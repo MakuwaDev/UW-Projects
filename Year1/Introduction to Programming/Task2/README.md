@@ -19,28 +19,29 @@ If there is no valid triplet of motels with different chains, output 0 0.
 
     The number of motels (n) will not exceed one million.
     All numbers will fit within the int type.
-    Some motels may be at the same position on the highway, and Bajtek may have stayed at multiple motels in the same position.
+    Some motels may be at the same position on the highway,  
+    and Bajtek may have stayed at multiple motels in the same position.
 
 ## Example:
 
 ### Input:
 
-9
-1 2
-2 6
-2 9
-1 13
-1 17
-3 20
-1 26
-3 27
-1 30
+9  
+1 2  
+2 6  
+2 9  
+1 13  
+1 17  
+3 20  
+1 26  
+3 27  
+1 30  
 
 ## Output:
 
 7 10
 
-### Explanation:
+## Explanation:
 
     Motel triplet (3, 4, 6) has the distances 9, 13, 20 and minimizes the maximum of consecutive distances.
     Motel triplet (2, 6, 9) has the distances 6, 20, 30 and maximizes the minimum of consecutive distances.
