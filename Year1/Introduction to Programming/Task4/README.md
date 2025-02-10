@@ -18,7 +18,7 @@ This program simulates events that occur during a working day at an office with 
         They leave their current queue and join the new one at the end.
 
     void zamkniecie_okienka(int k1, int k2) – The officer at window k1 goes on a break.  
-        All customers in the queue of k1 are transferred to the queue of window k2 in the same order they were standing at k1.
+        All customers in the k1 queue are transferred to the k2 queue in the same order they were standing at k1.
 
     *std::vector<interesant> fast_track(interesant i1, interesant i2) – Opens a special window that serves all customers  
         between i1 and i2 (inclusive). This group of customers is served and immediately leaves the office.
