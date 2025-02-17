@@ -63,5 +63,8 @@ Submit the solution as a file named **`crc.asm`**.
 
 ### Compilation
 
-The program must compile like so:  
+The assembly file should be compiled with:
+
+```sh
 nasm -f elf64 -w+all -w+error -o crc.o crc.asm ld --fatal-warnings -o crc crc.o
+```
