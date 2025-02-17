@@ -21,3 +21,46 @@ The polynomial **must not be a constant value**.
 
 The polynomial `11010101` corresponds to:  
 x⁸ + x⁷ + x⁶ + x⁴ + x² + 1
+
+## Program Specification
+
+Implement an assembly program **`crc`** that computes the CRC checksum of a sparse file:
+./crc file crc_poly  
+
+### Parameters:
+- `file`: Name of the input file.
+- `crc_poly`: The CRC polynomial as a binary string.
+
+### Output:
+- The computed CRC checksum as a binary string, followed by a newline (`\n`).
+- The program exits with code `0` on success.
+- If an error occurs, the program exits with code `1`.
+
+## System Calls
+
+The program must use Linux **system calls**:
+- `sys_open`
+- `sys_read`
+- `sys_write`
+- `sys_lseek`
+- `sys_close`
+- `sys_exit`
+
+### Error Handling
+
+- The program must validate its input parameters.
+- If an error occurs (invalid arguments or system call failure), it must exit with **code 1**.
+- The program must **explicitly close the file descriptor** before exiting.
+
+## Buffering for Efficiency
+
+To improve performance, **buffered reading** should be used. The optimal buffer size should be chosen for efficient disk access.  
+A comment should indicate the chosen buffer size and the reasoning behind it.
+
+## Submission Instructions
+
+Submit the solution as a file named **`crc.asm`**.
+
+### Compilation
+
+The program will be compiled using:
