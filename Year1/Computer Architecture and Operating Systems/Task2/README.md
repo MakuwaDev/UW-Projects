@@ -1,6 +1,6 @@
-# Integer Division Implementation in Assembly
+# Long Integer Division
 
-## Task Description
+## Short task summary/tranlsation:
 Implement the following function in assembly, callable from C:
 
 ```c
@@ -32,13 +32,3 @@ The assembly file should be compiled with:
 ```sh
 nasm -f elf64 -w+all -w+error -o mdiv.o mdiv.asm
 ```
-
-## Submission
-Submit the solution as a single file named `mdiv.asm`.
-
-## Grading Criteria
-- **7 points** for correct functionality, memory usage, and performance.
-- **3 points** for proper formatting and well-documented assembly code.
-- Excessive memory usage and large `.text` section size will result in deductions.
-- The file name must be correct; otherwise, 1 point will be deducted.
-- The instructor may request an explanation of the code before grading.
