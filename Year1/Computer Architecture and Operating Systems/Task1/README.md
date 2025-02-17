@@ -1,6 +1,6 @@
 # NAND Gates Library  
 
-## Task Overview  
+## Short task summary/tranlsation:
 The goal is to implement a dynamically loaded C library for simulating combinational circuits built from NAND gates. Each gate has a non-negative number of inputs and a single output. The NAND operation follows standard logic rules:  
 - A gate with no inputs always outputs `false`.  
 - A single-input gate acts as a NOT gate.  
