@@ -7,7 +7,7 @@ The goal is to implement a dynamically loaded C library for simulating combinati
 - An `n`-input gate outputs `false` only if all inputs are `true`; otherwise, it outputs `true`.  
 - A gate’s output can connect to multiple inputs of other gates, but each input must have exactly one source.  
 
-## Library Interfac  
+## Library Interface  
 The provided `nand.h` header defines the required API, including:  
 - `nand_t *nand_new(unsigned n);` – Creates an `n`-input NAND gate.  
 - `void nand_delete(nand_t *g);` – Destroys a gate and frees memory.  
