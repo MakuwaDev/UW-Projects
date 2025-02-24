@@ -91,7 +91,7 @@ java GPWSimulation input.txt 100000
 
 ### Input File Format
 
-\# 6 investors: 4 RANDOM, 2 SMA
+\# 6 investors: 4 RANDOM, 2 SMA  
 R R R R S S
 
 \# Stocks and last transaction prices
