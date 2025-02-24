@@ -29,8 +29,8 @@ The highest buy order (Order 4, 100 shares at 125) will be partially executed in
     Buy 25 shares from Order 2 at 124
     Buy 30 shares from Order 3 at 125
 
-A total of 65 shares will be acquired, leaving 35 shares pending execution at a limit price of 125.
-Order Execution Rules
+A total of 65 shares will be acquired, leaving 35 shares pending execution at a limit price of 125.  
+## Order Execution Rules
 
 The system operates in turn-based mode. Order execution follows:
 
@@ -39,7 +39,7 @@ The system operates in turn-based mode. Order execution follows:
     Execution Price: The trade occurs at the price of the older order (earlier submission time).
 
 For example, if an earlier sell order has a limit of 100 and a later buy order has a limit of 102, the transaction occurs at 100 (the older order’s price).
-Order Expiry Options
+## Order Expiry Options
 
 Orders can have different validity durations:
 
@@ -48,7 +48,7 @@ Orders can have different validity durations:
     Execute or Cancel Order: Must be executed fully within the same turn; otherwise, it is removed.
     Good-Till-Turn Order: Remains valid until a specified turn unless fulfilled earlier.
 
-Investor Behavior and Decision-Making
+## Investor Behavior and Decision-Making
 
 In each turn, investors can:
 
@@ -57,7 +57,7 @@ In each turn, investors can:
     Submit at most one buy/sell order for a selected stock
 
 The system processes all investors' decisions randomly each turn.
-Investor Strategies
+### Investor Strategies
 
 The system supports different investor strategies:
 
@@ -70,7 +70,7 @@ The system supports different investor strategies:
         Investors start using this method only after turn 10.
 
 The system should allow adding new investor types easily.
-Trading Constraints
+## Trading Constraints
 
     Stock prices and order price limits are positive integers.
     Order limits must not differ by more than ±10 from the last transaction price.
@@ -78,7 +78,7 @@ Trading Constraints
     Short selling is not allowed – investors cannot sell stocks they do not own.
     Orders that fail due to insufficient funds or shares are canceled.
 
-Program Input and Execution
+## Program Input and Execution
 
 The program reads:
 
@@ -89,15 +89,15 @@ Example execution:
 
 java GPWSimulation input.txt 100000
 
-Input File Format
+### Input File Format
 
-# 6 investors: 4 RANDOM, 2 SMA
+\# 6 investors: 4 RANDOM, 2 SMA
 R R R R S S
 
-# Stocks and last transaction prices
+\# Stocks and last transaction prices
 APL:145 MSFT:300 GOOGL:2700
 
-# Initial portfolio (same for all investors)
+\# Initial portfolio (same for all investors)
 100000 APL:5 MSFT:15 GOOGL:3
 
     Lines starting with # are ignored
@@ -105,7 +105,7 @@ APL:145 MSFT:300 GOOGL:2700
     Stock symbols and prices are given as TICKER:PRICE
     All investors start with the same cash balance and stock holdings
 
-Output Format
+## Output Format
 
 After simulation, the final portfolio of each investor is printed:
 
@@ -116,13 +116,13 @@ After simulation, the final portfolio of each investor is printed:
 100000 APL:5 MSFT:15 GOOGL:3
 100000 APL:5 MSFT:15 GOOGL:3
 
-Additional Features
+## Additional Features
 
     The system should log all trading operations for debugging.
     The total sum of cash and stocks remains constant throughout the simulation.
     Input validation must check if stocks in investor portfolios exist in the trading system.
 
-JUnit Testing Requirements
+## JUnit Testing Requirements
 
     Verify order execution logic
     Test different investor types and configurations
