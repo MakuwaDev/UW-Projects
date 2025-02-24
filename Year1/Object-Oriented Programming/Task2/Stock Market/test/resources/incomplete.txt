@@ -1,0 +1,4 @@
+# Namy 6 inwestorów: 4x RANDOM, 2x SMA
+R R R R S S
+# 3 rodzaje akcji w obrocie wraz z cenami ostatnich transakcji
+APL:145 MSFT:300 GOOGL:2700
