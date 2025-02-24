@@ -94,10 +94,10 @@ java GPWSimulation input.txt 100000
 \# 6 investors: 4 RANDOM, 2 SMA  
 R R R R S S
 
-\# Stocks and last transaction prices
+\# Stocks and last transaction prices  
 APL:145 MSFT:300 GOOGL:2700
 
-\# Initial portfolio (same for all investors)
+\# Initial portfolio (same for all investors)  
 100000 APL:5 MSFT:15 GOOGL:3
 
     Lines starting with # are ignored
@@ -109,12 +109,12 @@ APL:145 MSFT:300 GOOGL:2700
 
 After simulation, the final portfolio of each investor is printed:
 
-100000 APL:5 MSFT:15 GOOGL:3
-100000 APL:5 MSFT:15 GOOGL:3
-100000 APL:5 MSFT:15 GOOGL:3
-100000 APL:5 MSFT:15 GOOGL:3
-100000 APL:5 MSFT:15 GOOGL:3
-100000 APL:5 MSFT:15 GOOGL:3
+100000 APL:5 MSFT:15 GOOGL:3  
+100000 APL:5 MSFT:15 GOOGL:3  
+100000 APL:5 MSFT:15 GOOGL:3  
+100000 APL:5 MSFT:15 GOOGL:3  
+100000 APL:5 MSFT:15 GOOGL:3  
+100000 APL:5 MSFT:15 GOOGL:3  
 
 ## Additional Features
 
