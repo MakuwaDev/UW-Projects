@@ -13,15 +13,15 @@ Each order applies to a single company and includes a price limit (upper bound f
 ### Order Matching Example
 
 Consider the following order book for a particular stock:
-| **Kupno**           |                  |          | **Sprzedaż**    |          |                  |
-|---------------------|------------------|----------|-----------------|----------|------------------|
-| **Nr zlecenia**     | **Liczba akcji** | **Cena** | **Nr zlecenia** | **Cena** | **Liczba akcji** |
-| 4                   | **100**          | **125**  | 1               | **123**  | **10**           |
-|                     |  40              | 122      | 2               | **124**  | **25**           |
-|                     |  10              | 121      | 3               | **125**  | **30**           |
-|                     |  30              | 120      |                 | 126      | 20               |
-|                     |  10              | 119      |                 | 127      | 60               |
-|                     |  20              | 118      |                 |          |                  |
+| **Buy**         |                  |           | **Sell**        |           |                  |
+|-----------------|------------------|-----------|-----------------|-----------|------------------|
+| **Order no.**   | **Shares count** | **Price** | **Order no.**   | **Price** | **Shares count** |
+| 4               | **100**          | **125**   | 1               | **123**   | **10**           |
+|                 |  40              | 122       | 2               | **124**   | **25**           |
+|                 |  10              | 121       | 3               | **125**   | **30**           |
+|                 |  30              | 120       |                 | 126       | 20               |
+|                 |  10              | 119       |                 | 127       | 60               |
+|                 |  20              | 118       |                 |           |                  |
 
 The highest buy order (Order 4, 100 shares at 125) will be partially executed in three transactions:
 
