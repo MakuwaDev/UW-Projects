@@ -14,7 +14,7 @@ Each order applies to a single company and includes a price limit (upper bound f
 
 Consider the following order book for a particular stock:
 | **Kupno**           |                  |          | **Sprzedaż**    |          |                  |
-|---------------------|------------------|----------|----------------------------|------------------|
+|---------------------|------------------|----------|-----------------|----------|------------------|
 | **Nr zlecenia**     | **Liczba akcji** | **Cena** | **Nr zlecenia** | **Cena** | **Liczba akcji** |
 | 4                   | **100**          | **125**  | 1               | **123**  | **10**           |
 |                     |  40              | 122      | 2               | **124**  | **25**           |
