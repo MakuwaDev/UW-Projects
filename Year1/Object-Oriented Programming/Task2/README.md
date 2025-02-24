@@ -13,7 +13,7 @@ Each order applies to a single company and includes a price limit (upper bound f
 ### Order Matching Example
 
 Consider the following order book for a particular stock:
-| **Kupno**           |                  |          | **Sprzedaż**    |          |                  |
+| **Kupno**           |                  |          | **Sprzedaż**                                  |
 |---------------------|------------------|----------|-----------------|----------|------------------|
 | **Nr zlecenia**     | **Liczba akcji** | **Cena** | **Nr zlecenia** | **Cena** | **Liczba akcji** |
 | 4                   | **100**          | **125**  | 1               | **123**  | **10**           |
