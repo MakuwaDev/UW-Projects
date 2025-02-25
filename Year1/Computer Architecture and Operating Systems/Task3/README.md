@@ -1,4 +1,4 @@
-# Sparse Files - CRC Checksum Calculation
+# Sparse Files - CRC Checksum Calculatio
 
 ## Short task summary/translation:
 
