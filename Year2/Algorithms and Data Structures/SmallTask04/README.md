@@ -1,5 +1,5 @@
 # Counting k-Inversions  
-
+## Short task summary/translation:
 Given a permutation of numbers `{1, ..., n}`, a **k-inversion** is a sequence of indices `i₁, i₂, ..., iₖ` such that:  
 - `1 ≤ i₁ < i₂ < ... < iₖ ≤ n`  
 - The values at these indices form a strictly decreasing sequence: `a[i₁] > a[i₂] > ... > a[iₖ]`.  
