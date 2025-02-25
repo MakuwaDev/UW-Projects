@@ -17,7 +17,7 @@ This program implements a **dynamic sequence** data structure that supports two 
   - `j = (j' + w) mod (n + 1)` for **insert**  
   - `j = (j' + w) mod n` for **get**  
 - **w** is the result of the last **get** operation (or `0` initially).
-- We were allowed to use a finished implementation of balanced binary trees from the Internet and then only modify it. I believe I got mine from [here](https://github.com/KhaledAshrafH/AVL-Tree).
+- We were allowed to use a finished implementation of balanced binary trees from the Internet and build on top of it. I believe I got mine from [here](https://github.com/KhaledAshrafH/AVL-Tree).
 
 ## Output  
 - For each **get** operation, print the retrieved element.  
