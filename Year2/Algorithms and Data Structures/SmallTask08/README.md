@@ -1,5 +1,5 @@
 # Optimal Steering Plan for Captain Bajtazar  
-
+## Short task summary/translation:
 Captain Bajtazar and his first officer Bajtek are sailing the Bajtocian Sea. There are **n** islands, numbered from **1** to **n**. The captain's ship starts at **island 1** and must reach **island n**.  
 
 The ship moves in one of **four cardinal directions** (north, south, east, or west). When making a **90° turn**, the captain and the first officer switch control. After stopping at an island, the captain can choose who takes the helm first.  
