@@ -1,5 +1,5 @@
 # Highway Painting Tracker  
-
+## Short task summary/translation:
 Professor Makary is painting a **n-kilometer** highway at night using white paint. Initially, the entire highway is black. Each night, he paints a segment of the highway. However, during the day, road repairs may occur, covering sections with asphalt and turning them black again.  
 
 The goal is to keep track of how many kilometers of the highway are painted white after each operation.  
