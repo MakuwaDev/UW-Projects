@@ -4,7 +4,6 @@
 #include <queue>
 #include <algorithm>
 #include <limits>
-#include <execution>
 
 struct isle {
     int x;
@@ -30,7 +29,7 @@ inline int dist(isle const& lhs, isle const& rhs) {
 }
 
 void generateEdges(int n, int isle::* member) {
-    std::sort(std::execution::par, isles.begin(), isles.begin() + n, [member](isle const& lhs, isle const& rhs) {
+    std::sort(isles.begin(), isles.begin() + n, [member](isle const& lhs, isle const& rhs) {
         return lhs.*member < rhs.*member;
     });
 
