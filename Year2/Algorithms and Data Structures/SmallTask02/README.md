@@ -1,4 +1,5 @@
 # Striped Wallpaper Printing  
+## Short task summary/translation:
 
 Bajtocki Printing House (BZP) has received a large order for striped wallpapers. Each wallpaper consists of **n** vertical stripes of equal width, some of which have predefined colors, while others can be freely chosen.  
 
