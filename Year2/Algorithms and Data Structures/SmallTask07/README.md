@@ -1,5 +1,5 @@
 # Minimum Programmers for Project Execution  
-
+## Short task summary/translation:
 Bajtazar, the new IT manager of a government institution, must oversee project execution. Each project requires a **minimum number of programmers** and may depend on the completion of other projects. Due to budget cuts, only **k** projects can be executed. The goal is to **minimize the number of programmers needed** while ensuring at least **k** projects are completed.  
 
 ## Input  
