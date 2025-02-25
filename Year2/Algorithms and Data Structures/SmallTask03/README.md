@@ -1,4 +1,5 @@
 # Cellular Sorting Reversal  
+## Short task summary/translation:
 
 Cellular sorting is an unusual sorting algorithm with a relatively high time complexity. It operates step by step, repeatedly applying a transformation until the sequence becomes non-decreasing.  
 
