@@ -1,4 +1,4 @@
-# Finding Clearings in Bit Park  
+# Finding Clearings in a Bit Park  
 ## Short task summary/translation:
 In **Bit Park**, there are **n** clearings numbered from **1 to n**. Some pairs of clearings are connected by **bidirectional paths**, forming a **binary tree** rooted at clearing **1**.  
 
