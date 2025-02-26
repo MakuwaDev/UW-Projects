@@ -1,5 +1,5 @@
 # Lexicographical Substring Comparison  
-
+## Short task summary/translation:
 Given a string **s** of length **n** consisting of lowercase English letters, we analyze its **substrings**, which are contiguous segments of **s** in the form **s[i..j]**. The goal is to **lexicographically compare** pairs of such substrings.  
 
 A substring **u** is **lexicographically smaller** than **v** (`u < v`) if:  
