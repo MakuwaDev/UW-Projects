@@ -1,5 +1,5 @@
 # Maximum Domino Placement Value  
-
+## Short task summary/translation:
 Given a **k × n** rectangular grid where each cell contains an integer, the task is to place **1×2 dominoes** on the board such that:  
 - Each domino covers exactly **two adjacent cells**.  
 - No cell is covered by more than **one** domino.  
