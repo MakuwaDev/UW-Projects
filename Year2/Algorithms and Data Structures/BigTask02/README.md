@@ -1,5 +1,5 @@
 # Garden Growth and Analysis  
-
+## Short task summary/translation:
 The government of Bajtocja is funding the creation of a **grand garden**. Professor Makary oversees the project, designing a **long alley** divided into **n segments**, each initially containing trees of height **1**.  
 
 Professor Makary performs two types of operations:  
