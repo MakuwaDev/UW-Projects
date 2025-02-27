@@ -39,7 +39,6 @@ where `L` is the line number.
   ```
   
 ## Error Handling
-
-    The program validates input correctness in real time.
-    Errors are reported to standard error output.
-    The program must exit with code 0.
+ - The program validates input correctness in real time.
+ - Errors are reported to standard error output.
+ - The program must exit with code 0.
