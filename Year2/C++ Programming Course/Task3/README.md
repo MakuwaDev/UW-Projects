@@ -49,9 +49,8 @@ Manages a **list of competing knights** and **eliminated knights**.
 - Hides **global variables and helper functions** from external access.  
 - The eliminated list is **cleared** before each tournament execution or when modifying the tournament.  
 
-## Submission & Compilation
-- Submit `knights.h` (and optionally `knights.cpp`) to Moodle.  
-- The solution will be compiled on the **students** machine using:  
+## Compilation
+The solution will be compiled using:  
   ```sh
   g++ -Wall -Wextra -O2 -std=c++20 *.cpp
   ```
