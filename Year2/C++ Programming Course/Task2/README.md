@@ -36,7 +36,7 @@ The module provides the following operations:
 - Compiling with `-DNDEBUG` disables debugging output and assertions.
 
 ## Compilation
-The solution will be compiled on the **students** machine using:  
+The solution will be compiled using:  
   ```sh
   g++ -Wall -Wextra -O2 -std=c++20 strqueue.cpp -o strqueue
   ```
