@@ -20,12 +20,12 @@ Represents a knight with:
 - Modifiers to add/remove gold, change weapons/armor.  
 - `+=` Operator: Steals gold and better equipment from another knight.  
 - `+` Operator: Creates a new knight with combined gold (capped at `MAX_GOLD`) and the best equipment.  
-- Comparison (`<=>` and `==`): Determines which knight would win a duel based on weapon vs. armor strength. The duel (comparison) is won primarily by the warrior whose weapon is stronger than the opponent's armor and whose armor class is simultaneously not lower than the opponent's weapon class. Furthermore, if both knights have weapons stronger than the opponent's armor, the winner will be the one with the better armor or better weapon when the armors are of the same class. In all other cases, it will be a draw.    
+- Comparison (`<=>` and `==`): Determines which knight would win a duel based on weapon vs. armor strength.  
 - `constexpr` support: Knights can be used in constant expressions.  
 - `TRAINEE_KNIGHT`: A compile-time constant knight with 0 gold, weapon, and armor class 1.
 
 ##### Comparison conditions
-
+The duel (comparison) is won primarily by the warrior whose weapon is stronger than the opponent's armor and whose armor class is simultaneously not lower than the opponent's weapon class. Furthermore, if both knights have weapons stronger than the opponent's armor, the winner will be the one with the better armor or better weapon when the armors are of the same class. In all other cases, it will be a draw.    
 
 ### **Tournament**
 Manages a **list of competing knights** and **eliminated knights**.  
