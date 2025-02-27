@@ -32,3 +32,9 @@ The assembly file should be compiled with:
 ```sh
 nasm -f elf64 -w+all -w+error -o mdiv.o mdiv.asm
 ```
+
+## Error Handling
+
+    The program validates input correctness in real time.
+    Errors are reported to standard error output.
+    The program must exit with code 0.
