@@ -1,6 +1,6 @@
 # String Queue (strqueue)
 
-## Overview
+## Short task summary/translation:
 This project involves implementing a **string queue module** in C++ that is compatible with C. The module consists of a **header file (`strqueue.h`)** and an **implementation file (`strqueue.cpp`)**. The goal is to practice using STL containers, integrating C++ with legacy C code, and handling global object initialization.
 
 ## Functionality
