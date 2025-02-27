@@ -1,4 +1,4 @@
-# Medal Standings
+# Medal Standings (medals)
 
 ## Short task summary/translation:
 This project involves implementing a program to maintain the Olympic medal standings using C++ and the Standard Template Library (STL). The task focuses on practicing STL containers and algorithms while ensuring proper input validation, structured decision-making, and thorough testing.
