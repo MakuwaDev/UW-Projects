@@ -43,3 +43,6 @@ Safe as long as the binder isn't copied.
 
 
 ## Additional Requirements
+- **Exception Safety**: Strong exception guarantee for all operations.
+- **Memory Efficiency**: Uses **copy-on-write (COW)** to share resources until modifications are made.
+- **Compilation**: Must compile with `g++ -Wall -Wextra -O2 -std=c++20`.
