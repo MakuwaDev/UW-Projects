@@ -42,22 +42,21 @@ Additionally, a function const_poly(p) constructs a polynomial of size 1, where 
     Unary - operator.
 
 The result type is automatically deduced using std::common_type_t<U, V>, ensuring the minimal required polynomial size.
-Indexing and Evaluation
+### Indexing and Evaluation
 
-    operator[](size_t i): Returns a reference to coefficient aiai​.
+    operator[](size_t i): Returns a reference to coefficient aᵢ
     at(...): Evaluates the polynomial at given points.
         Supports partial evaluation (fewer arguments than variables).
         Can accept an std::array for batch evaluation.
 
-Other Methods
+### Other Methods
 
     size(): Returns the polynomial's size (N).
 
     cross(p, q): Computes the cross product of two polynomials:
-    cross(p,q)(x1,...,xn,y1,...,ym)=p(x1,...,xn)⋅q(y1,...,ym)
-    cross(p,q)(x1​,...,xn​,y1​,...,ym​)=p(x1​,...,xn​)⋅q(y1​,...,ym​)
+    cross(p,q)(x₁, ..., xₙ, y₁, ..., yₘ) = p(x₁, ..., xₙ) ⋅ q(y₁, ..., yₘ)
 
-Additional Requirements
+## Additional Requirements
 
     All methods and constructors are constexpr, allowing compile-time evaluation.
     Helper definitions are hidden inside a detail namespace.
