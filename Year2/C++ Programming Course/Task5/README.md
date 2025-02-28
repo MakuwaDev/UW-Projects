@@ -31,3 +31,11 @@ This project implements a `binder` class template, a structured notebook system 
 - `read(K const&)` / `read(K const&) const` – Retrieves a reference to a note by its bookmark. *(O(log n))*
 - `size() const` – Returns the number of notes. *(O(1))*
 - `clear()` – Removes all notes. *(O(n))*
+
+### Iteration Support
+
+Implements const_iterator with:
+- `cbegin()`, `cend()`
+- Standard iterator operations (`=`, `==`, `!=`, `++`, `*`, `->`)
+- Forward iteration in *O(1)* time.
+Safe as long as the binder isn't copied.
