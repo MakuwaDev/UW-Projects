@@ -15,3 +15,9 @@ This project implements a `binder` class template, a structured notebook system 
 - `V` (value) stores the **note content** and must have a **public copy constructor and destructor.**
 
 ## Features and Operations
+
+### Constructors & Assignment
+
+    Default constructor: Creates an empty binder.
+    Copy & move constructors: O(1) complexity.
+    Copy-and-swap assignment: O(1) complexity + destruction time of overwritten object.
