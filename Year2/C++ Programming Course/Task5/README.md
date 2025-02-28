@@ -37,7 +37,8 @@ This project implements a `binder` class template, a structured notebook system 
 Implements const_iterator with:
 - `cbegin()`, `cend()`
 - Standard iterator operations (`=`, `==`, `!=`, `++`, `*`, `->`)
-- Forward iteration in *O(1)* time.  
+- Forward iteration in *O(1)* time.
+
 Safe as long as the binder isn't copied.
 
 
