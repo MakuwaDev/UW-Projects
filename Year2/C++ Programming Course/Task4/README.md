@@ -9,7 +9,7 @@ template <typename T, std::size_t N = 0> class poly;
 
 An object of this class represents a single-variable polynomial of the form:  
 
-    a<sub>0</sub> + a<sub>1</sub>x + a<sub>2</sub>x<sup>2</sup> + … + a<sub>N−1</sub>x<sup>N−1</sup>
+    a₀ + a₁x + a₂x² + … + aₙ₋₁xⁿ⁻¹
 
 where coefficients aiai​ are of type T. The parameter N represents the size of the polynomial (degree + 1).
 
