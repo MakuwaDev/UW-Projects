@@ -18,6 +18,6 @@ This project implements a `binder` class template, a structured notebook system 
 
 ### Constructors & Assignment
 
-    - Default constructor: Creates an empty binder.
-    - Copy & move constructors: O(1) complexity.
-    - Copy-and-swap assignment: O(1) complexity + destruction time of overwritten object.
+- Default constructor: Creates an empty binder.
+- Copy & move constructors: O(1) complexity.
+- Copy-and-swap assignment: O(1) complexity + destruction time of overwritten object.
