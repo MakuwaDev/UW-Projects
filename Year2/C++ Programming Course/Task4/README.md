@@ -19,8 +19,8 @@ To support multivariate polynomials, the type T can itself be a polynomial (poly
 poly<poly<poly<int, 3>, 2>, 4>
 ```
 represents a 3-variable polynomial over integers, where the outermost polynomial is in x1, its coefficients are polynomials in x2, and so on.
-Implemented Features
-Constructors
+## Implemented Features
+### Constructors
 
     Default constructor: Creates a polynomial equal to zero.
     Copy and move constructors for poly<U, M>, where M <= N, and U is convertible to T.
@@ -28,11 +28,11 @@ Constructors
     Variadic constructor: Allows initialization from multiple coefficients (up to N).
 
 Additionally, a function const_poly(p) constructs a polynomial of size 1, where p is its only coefficient.
-Assignment Operators
+### Assignment Operators
 
     Copy and move assignment for poly<U, M>, where M <= N and U is convertible to T.
 
-Arithmetic Operators
+### Arithmetic Operators
 
     In-place operations (+=, -=, *=) for polynomials or values convertible to T.
     Binary arithmetic (+, -, *) with support for:
