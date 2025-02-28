@@ -11,12 +11,13 @@ An object of this class represents a single-variable polynomial of the form:
 
     a₀ + a₁x + a₂x² + … + aₙ₋₁xⁿ⁻¹
 
-where coefficients aiai​ are of type T. The parameter N represents the size of the polynomial (degree + 1).
+where coefficients aᵢ are of type T. The parameter N represents the size of the polynomial (degree + 1).
 
 To support multivariate polynomials, the type T can itself be a polynomial (poly). For example:
 
+```cpp
 poly<poly<poly<int, 3>, 2>, 4>
-
+```
 represents a 3-variable polynomial over integers, where the outermost polynomial is in x1, its coefficients are polynomials in x2, and so on.
 Implemented Features
 Constructors
