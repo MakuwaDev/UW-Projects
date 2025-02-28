@@ -18,6 +18,16 @@ This project implements a `binder` class template, a structured notebook system 
 
 ### Constructors & Assignment
 
-- Default constructor: Creates an empty binder.
-- Copy & move constructors: O(1) complexity.
-- Copy-and-swap assignment: O(1) complexity + destruction time of overwritten object.
+- **Default constructor**: Creates an empty binder.
+- **Copy & move constructors**: O(1) complexity.
+- **Copy-and-swap assignment**: O(1) complexity + destruction time of overwritten object.
+
+### Note Management
+
+- `insert_front(K const&, V const&)` – Inserts a note at the front. Throws `std::invalid_argument` if the bookmark already exists. *(O(log n))*
+- `insert_after(K const&, K const&, V const&)` – Inserts a note after a given bookmark. Throws if `prev_k` is not found. *(O(log n))*
+- `remove()` – Removes the first note. Throws if empty. *(O(log n))*
+- `remove(K const&)` – Removes a specific note by its bookmark. Throws if not found. *(O(log n))*
+- `read(K const&)` / `read(K const&) const` – Retrieves a reference to a note by its bookmark. *(O(log n))*
+- `size() const` – Returns the number of notes. *(O(1))*
+- `clear()` – Removes all notes. *(O(n))*
