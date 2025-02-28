@@ -1,5 +1,5 @@
 # Multivariate Polynomial Ring
-## Overview
+## Short task summary/translation:
 
 This project involves implementing a multivariate polynomial ring using a template class:
 
