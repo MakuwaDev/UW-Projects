@@ -13,11 +13,12 @@ A list type `L` must provide:
 ```cpp
 template <typename F, typename A> A operator()(F f, A a);
 ```
-where type **F** has a template method of signature
+where type `F` has a template method of signature
 ```cpp
 template <typename X> A operator()(X x, A a);
 ```
-Processing a list *l* with function *f* and accumulator *a* must satisfy:
+Processing a list `l` with function `f` and accumulator `a` must satisfy:
 ```
 l(f, a) = f(x0, f(x1, ... f(xn-1, a) ...))
 ```
+where `x0, x1, ...` are the elements of the list.
