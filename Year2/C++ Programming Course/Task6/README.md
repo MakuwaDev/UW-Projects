@@ -31,4 +31,3 @@ Invalid operations (e.g., creating an existing counter or deleting a non-existen
 - Implemented using **OOP** and **C++20 modules** (`.cppm` files).
 - No preprocessor directives (`#`).
 - Delivered with a `Makefile` supporting incremental builds, `.PHONY`, `clean`, and producing an executable `counters`.
-- Exit code must be `0`.
