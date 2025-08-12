@@ -22,3 +22,26 @@ Processing a list `l` with function `f` and accumulator `a` must satisfy:
 l(f, a) = f(x0, f(x1, ... f(xn-1, a) ...))
 ```
 where `x0, x1, ...` are the elements of the list.
+
+
+## Required Operations (in namespace `flist`)
+
+- auto empty – empty list.
+
+- auto cons(x, l) – prepend x to list l.
+
+- auto create(...) – create list from given arguments.
+
+- auto of_range(r) – create list from range r.
+
+- auto concat(l, k) – concatenate two lists.
+
+- auto rev(l) – reverse a list.
+
+- auto map(m, l) – apply transformation m(x) to each element.
+
+- auto filter(p, l) – keep only elements satisfying p(x).
+
+- auto flatten(l) – flatten a list of lists.
+
+- std::string as_string(l) – string representation of list.
