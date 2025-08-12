@@ -17,3 +17,7 @@ where type **F** has a template method of signature
 ```cpp
 template <typename X> A operator()(X x, A a);
 ```
+Processing a list *l* with function *f* and accumulator *a* must satisfy:
+```
+l(f, a) = f(x0, f(x1, ... f(xn-1, a) ...))
+```
