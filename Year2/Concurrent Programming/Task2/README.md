@@ -10,6 +10,7 @@ We are interested in pairs of *multisets* of natural numbers with certain proper
 - For a fixed parameter d≥3, multisets must be **d-bounded** (i.e., all elements between 1 and d).
 
 The computational problem stands as follows:
+
 Given d, and initial multisets **A0**, **B0**, find **d-bounded** `uncontestable` supersets **A**⊇**A0**, **B**⊇**B0** maximizing **∑A**=**∑B**.
 This maximum value is denoted `α(d,A0,B0)`.
 If no such sets exist, then α=0.
