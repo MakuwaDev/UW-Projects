@@ -26,4 +26,4 @@ The semantics follow standard boolean logic with extensions for thresholds (e.g.
 - Implementations must not use `CompletableFuture<T>` or its derivatives.
 
 ## ⚠️ Disclaimer
-The source code assumes different directory names than those implemented in this repository. This was done, as to not confuse the user, but now for the code to work, one must should change the **circuits** directory name to **cp2024** or change the code accordingly.
+The source code assumes different directory names than those implemented in this repository. This was done, as to not confuse the user, but now for the code to work, one must change the **circuits** directory name to **cp2024** or change the code accordingly.
