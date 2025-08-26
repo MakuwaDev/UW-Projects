@@ -1,7 +1,7 @@
 # Knight Tournament (knights)
 
 ## ⚠️ Disclaimer
-This was a pair project, co-author: Piotr Wojtas
+This was a pair project, co-author: **Piotr Wojtas**.
 
 ## Short task summary/translation:
 This project involves implementing a **knight tournament module** in C++. The module consists of a **header file (`knights.h`)** and optionally an **implementation file (`knights.cpp`)**. The task focuses on constructors, operator overloading, type conversions, initialization techniques, and `constexpr` usage.
