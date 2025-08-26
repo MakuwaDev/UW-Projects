@@ -74,3 +74,4 @@ where:
 - Third line: description of B
 - Elements with multiplicity > **1** are written as `kxa` (**k** times element **a**).
 - If no solution → output **0** and two empty lines.
+lol
