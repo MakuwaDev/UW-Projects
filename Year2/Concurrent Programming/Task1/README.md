@@ -1,5 +1,17 @@
 # Concurrent Circuits
 
-The task is to implement a solver for concurrent evaluation of boolean circuits represented as trees of nodes.  
-A circuit consists of constants (`true`, `false`), logical operators (`AND`, `OR`, `NOT`), conditional (`IF`), and threshold operators (`GT`, `LT`).  
-The solver must support evaluating multiple circuits in parallel and compute values of subexpressions concurrently, respecting interruption and stop signals.  
+## Short task summary/translation:
+The task is to implement a program for concurrent evaluation of boolean expressions represented as circuits.  
+A circuit is given as a tree structure composed of nodes representing constants (`true`, `false`), negation (`NOT`), conjunction (`AND`), disjunction (`OR`), conditionals (`IF`), and threshold operators (`GT`, `LT`).  
+The semantics follow standard boolean logic with extensions for thresholds (e.g. `GTx` is true if at least `x+1` arguments are true).
+
+## Requirements
+- Circuits are represented by the class `Circuit` with a root node of type `CircuitNode`.  
+- A solver implements the interface:
+  ```java
+  public interface CircuitSolver {
+      public CircuitValue solve(Circuit c);
+      public void stop();
+  }
+  ```
+  
