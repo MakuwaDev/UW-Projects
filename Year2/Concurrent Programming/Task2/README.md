@@ -17,11 +17,11 @@ If no such sets exist, then α=0.
 
 ## Examples
 
-For A0=B0=∅:
+- For A0=B0=∅:
 
 α(d,∅,∅)=d(d−1).
 
-For A0=∅,B0={1}:
+- For A0=∅,B0={1}:
 
 α(d,∅,{1})=(d−1)2.
 
