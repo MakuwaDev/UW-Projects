@@ -1,7 +1,7 @@
 # Multivariate Polynomial Ring
 
 ## ⚠️ Disclaimer
-This was a pair project, co-author: Hanna Marszałek.
+This was a pair project, co-author: **Hanna Marszałek**.
 
 ## Short task summary/translation:
 
