@@ -14,4 +14,4 @@ The semantics follow standard boolean logic with extensions for thresholds (e.g.
       public void stop();
   }
   ```
-  
+  where `solve` immediately returns a `CircuitValue` object, and the actual value is obtained by calling `getValue()`, which may block until the computation finishes.
