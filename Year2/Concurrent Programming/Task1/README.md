@@ -24,3 +24,6 @@ The semantics follow standard boolean logic with extensions for thresholds (e.g.
 - Each circuit has a unique tree of nodes; different `solve()` calls receive disjoint circuits.
 - Evaluation of leaf nodes (`LeafNode.getValue()`) and argument retrieval (`getArgs()`) may take arbitrary time, but are free of side effects and handle interruptions correctly.
 - Implementations must not use `CompletableFuture<T>` or its derivatives.
+
+## ⚠️ Disclaimer
+The source code assumes different directory names than those implemented in this repository. This was done, as to not confuse the user, but now for the code to work, one must should change the **circuits** directory name to **cp2024** or change the code accordingly.
