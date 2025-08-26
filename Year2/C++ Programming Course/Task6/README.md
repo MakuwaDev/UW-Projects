@@ -1,8 +1,10 @@
 # Counters
 
 ## ⚠️ Disclaimer
-This was a pair project, co-author: Gracjan Barski.
+This was a pair project, co-author: **Gracjan Barski**.
 
+
+## Modules
 This project introduces **C++20 modules** through an object-oriented implementation of various counter types.  
 The goal is to learn:
 - Basics of **C++ modules**.
