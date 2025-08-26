@@ -27,3 +27,9 @@ If no such sets exist, then α=**0**.
 
 These can be proven optimal, but the project requires computational verification for as large 
 **d** as possible, and also for other forced multisets.
+
+## Implementation Task
+- A **reference solution** (sequential recursive implementation using bitsets) is provided.
+- You must implement two alternative versions of the same algorithm:
+  - **Non-recursive** (single-threaded) implementation (e.g. using an explicit stack).
+  - **Parallel** (multi-threaded) implementation using `pthreads`, aiming for the best scalability.
