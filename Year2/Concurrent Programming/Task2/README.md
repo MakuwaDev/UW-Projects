@@ -12,18 +12,18 @@ We are interested in pairs of *multisets* of natural numbers with certain proper
 The computational problem stands as follows:
 
 Given d, and initial multisets **A0**, **B0**, find **d-bounded** `uncontestable` supersets **A**⊇**A0**, **B**⊇**B0** maximizing **∑A**=**∑B**.
-This maximum value is denoted `α(d,A0,B0)`.
+This maximum value is denoted `α(d, **A0**, **B0**)`.
 If no such sets exist, then α=0.
 
 ## Examples
 
-- For A0=B0=∅:
+- For **A0**=**B0**=**∅**:
 
-  α(d,∅,∅)=d(d−1).
+  α(d, **∅**, **∅**)=d(d−1).
 
-- For A0=∅,B0={1}:
+- For **A0**=**∅**, **B0**={1}:
 
-  α(d,∅,{1})=(d−1)2.
+  α(d,**∅**,{1})=(d−1)2.
 
 These can be proven optimal, but the project requires computational verification for as large 
 d as possible, and also for other forced multisets.
