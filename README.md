@@ -20,5 +20,6 @@ This is a showcase of my work and abilities, not a development history - project
 ## 📝 Tasks & Assignments
 Each project includes the task description (in Polish). If the original task is from a restricted webpage, I provide a PDF copy or a summary.
 
-## ⚠️ Disclaimer
+## ⚠️ Disclaimers
 This repository is for learning and showcasing purposes only. It does not include project history, as files were uploaded post-submission.
+All summaries/translations of the tasks were AI-generated.
