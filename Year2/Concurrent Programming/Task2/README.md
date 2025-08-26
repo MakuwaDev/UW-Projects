@@ -62,3 +62,15 @@ t d n m
 [A0 elements...]
 [B0 elements...]
 ```
+where:
+- t: number of helper threads
+- d: parameter for multisets to be **d-bounded**
+- n: size of **A0**
+- m: size of **B0**
+
+### Output:
+- First line: maximum sum (**∑A**=**∑B**)
+- Second line: description of A
+- Third line: description of B
+- Elements with multiplicity > **1** are written as `kxa` (**k** times element **a**).
+- If no solution → output **0** and two empty lines.
