@@ -18,4 +18,9 @@ The semantics follow standard boolean logic with extensions for thresholds (e.g.
 - The solver must:
   - Allow concurrent evaluation of multiple circuits.
   - Evaluate subexpressions concurrently (e.g., arguments of `AND`, `OR`, etc.).
-  - Support interruption: after calling `stop()`, all ongoing computations must terminate, and new tasks must be rejected. Interrupted evaluations may throw `InterruptedException` on `getValue()`. 
+  - Support interruption: after calling `stop()`, all ongoing computations must terminate, and new tasks must be rejected. Interrupted evaluations may throw `InterruptedException` on `getValue()`.
+
+## Constraints
+- Each circuit has a unique tree of nodes; different `solve()` calls receive disjoint circuits.
+- Evaluation of leaf nodes (`LeafNode.getValue()`) and argument retrieval (`getArgs()`) may take arbitrary time, but are free of side effects and handle interruptions correctly.
+- Implementations must not use `CompletableFuture<T>` or its derivatives.
