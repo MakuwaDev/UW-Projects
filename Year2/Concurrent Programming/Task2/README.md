@@ -23,7 +23,7 @@ If no such sets exist, then α=**0**.
 
 - For **A0**=**∅**, **B0**=**{1}**:
 
-  α(**d**, **∅**, **{1}**)=**(d−1)$$^2$$**.
+  α(**d**, **∅**, **{1}**)=**(d−1)^2**.
 
 These can be proven optimal, but the project requires computational verification for as large 
 **d** as possible, and also for other forced multisets.
@@ -33,3 +33,32 @@ These can be proven optimal, but the project requires computational verification
 - You must implement two alternative versions of the same algorithm:
   - **Non-recursive** (single-threaded) implementation (e.g. using an explicit stack).
   - **Parallel** (multi-threaded) implementation using `pthreads`, aiming for the best scalability.
+
+
+Key points:
+
+- The algorithm explores all branches of the recursion tree, incrementally building **A**, **B**.
+- To optimize, sumsets (**ΣA**, **BΣ**) are represented using efficient bitsets.
+- You are not allowed to change how sumsets work; the challenge is to restructure for parallelism, not micro-optimize bit operations.
+- Each thread should mostly explore its own branch, occasionally sharing work to balance load.
+
+## Scalability & Report
+
+- Define scalability factor as **ts**/**tn**, where:
+  - ts = runtime of the reference implementation (1 thread).
+  - tn = runtime of the parallel implementation with n threads.
+  - Ideally, scalability = n.
+
+- Report requirements:
+  - PDF document with plots showing scalability for **d**∈{**5**, **10**, **15**, **20**, **25**, **30**, **32**, **34**}, with **A0**=**∅**, **B0**=**{1}**.
+  - Use number of threads = powers of **2** (**1**, **2**, **4**, **8**, … up to at least **8**, max **64**).
+  - If runtime > **1 min** → stop and mark scalability as **−1**.
+ 
+## Input/Output Format
+
+### Input:
+```
+t d n m
+[A0 elements...]
+[B0 elements...]
+```
