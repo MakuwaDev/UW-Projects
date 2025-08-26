@@ -1,7 +1,7 @@
 # Binder - A Copy-on-Write Notebook Container
 
 ## ⚠️ Disclaimer
-This was a pair project, co-author: Aleks Lukosek.
+This was a pair project, co-author: **Aleks Lukosek**.
 
 ## Short task summary/translation:
 
