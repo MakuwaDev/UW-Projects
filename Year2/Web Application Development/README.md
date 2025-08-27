@@ -1,4 +1,3 @@
-
 # Web Application Development
 
 This folder contains the projects and assignments from the Web Application Development course at the University of Warsaw.  
@@ -11,5 +10,5 @@ For detailed information on the course content, please refer to the official syl
 
 ## ⚠️ Disclaimer
 
-Although the course is formally divided into five projects, in reality there are only three distinct ones: the first two are independent, while projects 3–5 form a continuous sequence, with each building upon the previous.
-In the latter case all task descriptions will be provided.
+Although the course is formally divided into five projects, in reality there are only two distinct ones: the first two are connected, while projects 3–5 form a continuous sequence, with each building upon the previous.
+Due to the sheer amount of text, the original and translated task descriptions will be put into separate folders and NOT in a README.md, which will contain only a BRIEF task overview.
