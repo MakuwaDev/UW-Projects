@@ -8,3 +8,8 @@ The course covers techniques and tools used for building web applications and se
 
 For detailed information on the course content, please refer to the official syllabus (in Polish):  
 [Web Application Development - Syllabus](https://usosweb.mimuw.edu.pl/kontroler.php?_action=katalog2/przedmioty/pokazPrzedmiot&kod=1000-214bWWW)
+
+## ⚠️ Disclaimer
+
+Although the course is formally divided into five projects, in reality there are only three distinct ones: the first two are independent, while projects 3–5 form a continuous sequence, with each building upon the previous.
+In the latter case all task descriptions will be provided.
