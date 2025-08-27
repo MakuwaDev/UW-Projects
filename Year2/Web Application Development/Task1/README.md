@@ -1,4 +1,3 @@
-
 # Organizacyjne
 
 Deadline: to zadanie jest na zaliczenie (TAK/NIE), trzeba je oddać na drugim lub trzecim laboratorium osobie, która prowadzi zajęcia.
