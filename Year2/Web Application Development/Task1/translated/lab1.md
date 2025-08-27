@@ -1,9 +1,3 @@
-# Organizational
-
-Deadline: this assignment is pass/fail (YES/NO) and must be submitted during the second or third lab session to the instructor leading the class.
-
-This assignment requires Python. You may not know Python at all yet. At the end of this page, you will find some useful information.
-
 # Task
 
 In this assignment, you need to write a program that prepares a static website and publishes it “on the internet”.
