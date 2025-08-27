@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-center;
+  align-items: stretch;
+  background-color: #181818;
+  padding: 20px;
+}
+
+.item {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  padding: 20px;
+  margin: 10px;
+  flex: 1;
+  text-align: center;
+}
+.item:hover {
+  background-color: #404040;
+}
+
+@media (max-width: 800px) {
+  .banner {
+    display: none;
+  }
+  .container {
+    flex-direction: column;
+  }
+}
+@media (min-width: 801px) {
+  .item:hover {
+    background-color: rgb(89.5, 89.5, 89.5);
+  }
+}
+.left-align {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.right-align {
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+
+.center-align {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.space-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+/*# sourceMappingURL=drill.css.map */
