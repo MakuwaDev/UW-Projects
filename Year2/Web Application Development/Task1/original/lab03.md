@@ -49,31 +49,31 @@ Po zainstalowaniu Sass globalnie, możesz użyć polecenia `sass` w dowolnym mie
 sass [plik.scss] [plik.css]
 ```
 
-#### Lokalna instalacja za pomocą npm
-Aby zainstalować Sass lokalnie, na początku utwórz projekt komendą:
+#### Local installation with npm
+To install Sass locally, initialize a project::
 ```bash
 npm init -y
 ```
-Następnie w tym samym katalogu zainstaluj Sass:
+Then install Sass in the same folder:
 ```bash
 npm install sass
 ```
-Teraz do kompilacji SCSS do CSS wystarczy komenda:
+Compile SCSS to CSS with:
 ```bash
 npx sass [plik.scss] [plik.css]
 ```
 
-### Automatyczna kompilacja po zapisie
-Aby automatycznie kompilować pliki SCSS do CSS przy każdej zmianie, możesz użyć flagi `--watch`:
+### Automatic compilation on save
+To automatically compile SCSS to CSS on every change, use the `--watch` flag:
 ```bash
 sass --watch [plik.scss]:[plik.css]
 ```
-Lub w przypadku lokalnej instalacji:
+Or for local installation:
 ```bash
 npx sass --watch [plik.scss]:[plik.css]
 ```
 
-## Przydatne informacje
+## Helpful resources
 
 - [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [SCSS](https://sass-lang.com/guide)
