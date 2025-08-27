@@ -1,9 +1,3 @@
-# Organizacyjne
-
-Deadline: to zadanie jest na zaliczenie (TAK/NIE), trzeba je oddać na drugim lub trzecim laboratorium osobie, która prowadzi zajęcia.
-
-To zadanie wymaga Pythona. Być może nie umiesz jeszcze Pythona w ogóle. Na końcu tej strony znajdziesz przydatne informacje.
-
 # Zadanie
 
 W tym zadaniu masz napisać program, który przygotuje statyczną witrynę internetową i wystawi ją "w internecie".
