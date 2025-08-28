@@ -1,5 +1,5 @@
 #  Purpose
 
-The purpose of this directory is to store original Markdown files of laboratories 1-4 that together form 2 of the 5 projects required to pass the course.
+The purpose of this directory is to store original Markdown files of laboratories 5-12 that together form the projects 3-5 required to pass the course.
 
-They are stored together as project 2 builds upon project 1 to create one whole webpage.
+They are stored together as projects 4 and 5 build upon project 3 to create one whole webpage.
