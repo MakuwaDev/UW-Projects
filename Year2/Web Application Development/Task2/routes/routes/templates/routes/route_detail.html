@@ -1,0 +1,92 @@
+{% load custom_filters %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+<body>
+<div class="main">
+{% if route %}
+    <div class="header" style="z-index: 100;"><h2>{{ route.name }}</h2></div>
+    <div id="route-meta">
+        <p>Created: {{ route.created_at }}</p>
+        <p>Background: {{ route.background }}</p>
+    </div>
+
+    <form method="post" style="margin-top: 50px">
+    <h3 class="header">Add Point</h3>
+        {% csrf_token %}
+        {{ point_form.as_p }}
+        <button type="submit" name="add_point">Add Point</button>
+    </form>
+
+    <div id="image-container" style="align-self: center; position: relative; width: 75%">
+        <img src="{{ route.background.image.url }}" alt="bg" style="width: 100%; display: block;" id="route-image">
+
+        {% for point in route.points.all %}
+            <div class="point"
+                style="position: absolute;
+                        top: {{ point.y }}%;
+                        left: {{ point.x }}%;
+                        z-index: 1;
+                        transform: translate(-50%, -50%);
+                        width: 10px;
+                        height: 10px;
+                        background: red;
+                        border-radius: 50%;"
+                {% if forloop.last %}
+                    id="last-point"
+                    data-x="{{ point.x }}"
+                    data-y="{{ point.y }}"
+                {% endif %}
+            >
+            </div>
+        {% endfor %}
+
+        <svg style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+             viewBox="0 0 100 100" preserveAspectRatio="none" id='route-svg'>
+
+            {% if route.points.all|length > 1%}
+                {% for point in route.points.all %}
+                    {% with next_point=route.points.all|get_item:forloop.counter %}
+                    {% if next_point %}
+                        <line x1="{{ point.x }}" y1="{{ point.y }}"
+                            x2="{{ next_point.x }}" y2="{{ next_point.y }}"
+                            stroke="blue" stroke-width="0.5" />
+                    {% endif %}
+                    {% endwith %}
+                {% endfor %}
+            {% endif%}
+        </svg>
+    </div>
+
+    <form>
+    <h3 class="header">Route Points</h3>
+    <ul>
+      {% for point in route.points.all %}
+        <li class="point-item" data-x="{{ point.x }}" data-y="{{ point.y }}">
+          ({{ point.x }}, {{ point.y }})
+          <button onclick="location.href='{% url 'routes:point_delete' point.pk %}'" type="button">Delete</button>
+        </li>
+      {% endfor %}
+    </ul>
+    </form>
+    <div id="footer">
+    <button onclick="location.href='{% url 'routes:route_delete' route.pk %}'">Delete Route</button>
+
+    <button onclick="location.href='{% url 'routes:my_routes' %}'">Back to Your Routes</button>
+    </div>
+{% else %}
+    <div class="header"><h2> Create New Route </h2></div>
+    <form method="post">
+        {% csrf_token %}
+        {{ route_form.as_p }}
+        <button type="submit" name="save_route">Create Route</button>
+    </form>
+    <div class="footer" style="align-self: center">
+    <button onclick="location.href='{% url 'routes:my_routes' %}'">Cancel</button>
+    </div>
+{% endif %}
+</div>
+</body>
+<script src="{% static 'js/dist/add_point.js' %}"></script>
+<script src="{% static 'js/dist/highlight.js' %}"></script>
+<script src="{% static 'js/dist/sse.js' %}"></script>
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">

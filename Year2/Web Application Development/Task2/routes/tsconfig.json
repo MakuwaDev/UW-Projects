@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "esnext",
+    "lib": ["DOM", "ES2018"],
+    "outDir": "./static/js/dist",
+    "sourceMap": true,
+    "strict": true
+  },
+  "include": ["typescript/**/*"]
+}

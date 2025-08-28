@@ -1,0 +1,59 @@
+{% load static %}
+<body>
+<div class="main">
+<div class="header">
+    {% if gameboard %}
+        <h2>Edit Gameboard</h2>
+    {% else %}
+        <h2>Create New Gameboard</h2>
+    {% endif %}
+</div>
+
+{% if gameboard %}
+<form type="hidden" id="hidden-form">
+    <input type="hidden" id="hidden-pk" value="{{ gameboard.pk }}" />
+    <input type="hidden" id="hidden-title" value="{{ gameboard.title }}" />
+    <input type="hidden" id="hidden-rows" value="{{ gameboard.rows }}" />
+    <input type="hidden" id="hidden-cols" value="{{ gameboard.cols }}" />
+    <input type="hidden" id="hidden-dots" value="{{ gameboard.dots }}" />
+</form>
+{% endif %}
+
+<form id="board-form">
+    {% csrf_token %}
+    <input type="text" id="title" placeholder="Board Title" required />
+    <input type="number" id="rows" placeholder="Row Count" required />
+    <input type="number" id="cols" placeholder="Column Count" required />
+    <button type="button" id="generate">Generate Grid</button>
+
+    <div id="grid-and-error">
+        <div id="grid-container"></div>
+        <div id="error-message"></div>
+    </div>
+
+    <div id="color-picker">
+        <button class="color-button" id="#FFD600" type="button" data-color="#FFD600" style="background:#FFD600;"></button>
+        <button class="color-button" id="#02C853" type="button" data-color="#02C853" style="background:#02C853;"></button>
+        <button class="color-button" id="#AA00FF" type="button" data-color="#AA00FF" style="background:#AA00FF;"></button>
+        <button class="color-button" id="#FF6D00" type="button" data-color="#FF6D00" style="background:#FF6D00;"></button>
+        <button class="color-button" id="#2862FF" type="button" data-color="#2862FF" style="background:#2862FF;"></button>
+        <button class="color-button" id="#D40200" type="button" data-color="#D40200" style="background:#D40200;"></button>
+        <button class="color-button" id="#00BFA5" type="button" data-color="#00BFA5" style="background:#00BFA5;"></button>
+        <button class="color-button" id="#C51062" type="button" data-color="#C51062" style="background:#C51062;"></button>
+    </div>
+
+    <button type="submit">Save</button>
+</form>
+
+<div id="footer">
+{% if gameboard %}
+<button onclick="location.href='{% url 'routes:gameboard_delete' gameboard.pk %}'" type="button">Delete Board</button>
+{% endif %}
+
+<button onclick="location.href='{% url 'routes:my_gameboards' %}'">Back to Your Boards</button>
+</div>
+<div>
+</body>
+<script type="module" src="{% static 'js/dist/gameboard.js' %}"></script>
+<script src="{% static 'js/dist/sse.js' %}"></script>
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">

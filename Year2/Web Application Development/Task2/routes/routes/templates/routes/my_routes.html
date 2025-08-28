@@ -1,0 +1,25 @@
+{% load static %}
+<body>
+<div class="main">
+<div class="header"><h2>Your Routes</h2></div>
+<form>
+<ul>
+    {% for route in routes %}
+        <li>
+            <a href="{% url 'routes:route_detail' route.pk %}">
+                {{ route.name }}
+            </a>
+        </li>
+    {% empty %}
+        <li> No routes found </li>
+    {% endfor %}
+</ul>
+</form>
+<div id="footer">
+    <button onclick="location.href='{% url 'routes:index' %}'">Back to Index</button>
+    <button onclick="location.href='{% url 'routes:new_route' %}'">Create Route</button>
+</div>
+</div>
+</body>
+<script src="{% static 'js/dist/sse.js' %}"></script>
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">

@@ -1,0 +1,17 @@
+{% load static %}
+<body>
+{% if user %}
+<form>
+<p> Wagwan {{ user.username }}, big man ting!</p>
+<p> <a href="{% url 'routes:my_routes' %}">Your routes</a> </p>
+<p> <a href="{% url 'routes:my_gameboards' %}">Your boards</a> </p>
+<p> <a href="{% url 'routes:my_paths' %}">Your paths</a> </p>
+<p> <a href="{% url 'routes:logout' %}">Logout</a> </p>
+{% else %}
+<p> Sum went real bad ngl </p>
+<p> <a href="{% url 'routes:login' %}">Login</a> </p>
+{% endif %}
+</form>
+</body>
+<script src="{% static 'js/dist/sse.js' %}"></script>
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">

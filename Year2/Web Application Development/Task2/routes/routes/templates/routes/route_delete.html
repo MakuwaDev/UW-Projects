@@ -1,0 +1,20 @@
+{% load static %}
+<body>
+<div class="main">
+<div class="header"><h2>Are you sure you want to delete this route?</h2></div>
+<form method="post">
+<p>Title: {{ route.name }}</p>
+<p>Created at: {{ route.created_at }}</p>
+
+    {% csrf_token %}
+    <button type="submit">Delete</button>
+<div id="footer">
+    <button type="button" onclick="location.href='{% url "routes:route_detail" route.pk %}'">
+    Cancel
+    </button>
+</div>
+</form>
+</div>
+</body>
+<script src="{% static 'js/dist/sse.js' %}"></script>
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">

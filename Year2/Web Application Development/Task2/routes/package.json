@@ -1,0 +1,27 @@
+{
+  "name": "routes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MakuwaDev/django_routes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MakuwaDev/django_routes/issues"
+  },
+  "homepage": "https://github.com/MakuwaDev/django_routes#readme",
+  "description": "",
+  "dependencies": {
+    "source-map-js": "^1.2.1"
+  }
+}

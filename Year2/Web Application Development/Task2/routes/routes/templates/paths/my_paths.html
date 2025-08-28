@@ -1,0 +1,24 @@
+{% load static %}
+<body>
+<div class="main">
+<div class="header"><h2>Your Paths</h2></div>
+<form>
+<ul>
+    {% for board in gameboards %}
+        <li>
+            <a href="{% url 'routes:path_entry' board.pk %}">
+                {{ board.title }} by {{ board.user }}
+            </a>
+        </li>
+    {% empty %}
+        <li> No paths found </li>
+    {% endfor %}
+</ul>
+</form>
+<div id="footer">
+    <button onclick="location.href='{% url 'routes:index' %}'">Back to Index</button>
+</div>
+</div>
+</body>
+<script src="{% static 'js/dist/sse.js' %}"></script>
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">

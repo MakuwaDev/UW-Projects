@@ -1,0 +1,36 @@
+{% load static %}
+<body>
+<div class="main">
+<div class="header">
+    <h2>Solve {{ board.title }} by {{ board.user }}!</h2>
+</div>
+
+<form type="hidden" id="hidden-path-form">
+    <input type="hidden" id="hidden-path-pk" value="{{ path.pk }}" />
+    <input type="hidden" id="hidden-path-cells" value="{{ path.path }}" />
+</form>
+
+<form type="hidden" id="hidden-board-form">
+    <input type="hidden" id="hidden-board-pk" value="{{ board.pk }}" />
+    <input type="hidden" id="hidden-board-title" value="{{ board.title }}" />
+    <input type="hidden" id="hidden-board-rows" value="{{ board.rows }}" />
+    <input type="hidden" id="hidden-board-cols" value="{{ board.cols }}" />
+    <input type="hidden" id="hidden-board-dots" value="{{ board.dots }}" />
+</form>
+
+<form id="path-form">
+    {% csrf_token %}
+    <div id="grid-container" style="position: relative;">
+        <svg id="path-svg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 10;"></svg>
+    </div>
+    <button type="submit">Save</button>
+</form>
+
+<div id="footer">
+    <button onclick="location.href='{% url 'routes:my_paths' %}'">Back to Your Paths</button>
+</div>
+<div>
+</body>
+<script type="module" src="{% static 'js/dist/path.js' %}"></script>
+<script src="{% static 'js/dist/sse.js' %}"></script>
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">

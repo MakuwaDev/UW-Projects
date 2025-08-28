@@ -1,0 +1,15 @@
+{% load static %}
+<body>
+<div class="main">
+<div class="header"><h2>Login</h2></div>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Log in</button>
+</form>
+<div>
+<div id="footer">
+  <p>Don't have an accout? <a href="{% url 'routes:register' %}">Sign up!</a></p>
+</div>
+</body>
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
