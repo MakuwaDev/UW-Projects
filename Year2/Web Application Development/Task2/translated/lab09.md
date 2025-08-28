@@ -49,7 +49,7 @@ The goal of this lab is to implement a **user interface (TypeScript frontend, Dj
      - Dimensions: `rows` (number of rows, `IntegerField`), `cols` (number of columns, `IntegerField`).
      - Dot placement:
        - Use a `JSONField` to store a list of objects like:
-         ```json
+         ```python
          [
            {"row": r1, "col": c1, "color": "#FF0000"},
            {"row": r2, "col": c2, "color": "#FF0000"}
