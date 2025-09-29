@@ -15,12 +15,11 @@ This established the foundation for later interactive features.
 
 ---
 
-## Lab 6 – REST API and AJAX Integration
+## Lab 6 – REST API
 In this stage, we extended the backend with a **REST API** using Django REST Framework (DRF).  
 Key elements:
 - API endpoints for managing routes and points.
 - Token-based authentication for API access.
-- Basic AJAX requests from the frontend to communicate with the API.  
 This enabled asynchronous interaction with the application.
 
 ---
