@@ -1,11 +1,11 @@
 
 # Labs 5–12: Interactive Route/Path Editor
 
-This project was developed as part of the **Web Applications** course and spans multiple lab assignments. The goal was to gradually build a full-stack web application: an interactive editor for creating, storing, and managing routes/paths on images and dynamic boards. The work evolved from a simple Django app into a multi-user system with real-time updates.
+The goal of this project was to gradually build a full-stack web application: an interactive editor for creating, storing, and managing routes/paths on images and dynamic boards. The work evolved from a simple Django app into a multi-user system with real-time updates.
 
----
+## Overview of Labs
 
-## Lab 5 – Web Application Basics (Django)
+### Lab 5 – Web Application Basics (Django)
 We started with setting up a **Django-based backend** to handle user accounts and data models.  
 Key elements:
 - User authentication and authorization.
@@ -15,7 +15,7 @@ This established the foundation for later interactive features.
 
 ---
 
-## Lab 6 – REST API
+### Lab 6 – REST API
 In this stage, we extended the backend with a **REST API** using Django REST Framework (DRF).  
 Key elements:
 - API endpoints for managing routes and points.
@@ -24,7 +24,7 @@ This enabled asynchronous interaction with the application.
 
 ---
 
-## Lab 7 – Application Testing
+### Lab 7 – Application Testing
 We added **automatic testing** to ensure correctness and stability of the system.  
 Key elements:
 - Unit and integration tests for data models.
@@ -35,7 +35,7 @@ This stage guaranteed reliability as the application grew more complex.
 
 ---
 
-## Lab 8 – Interactive Frontend (TypeScript)
+### Lab 8 – Interactive Frontend (TypeScript)
 We introduced an **interactive frontend written in TypeScript**.  
 Key elements:
 - Editing routes directly on a static background image.
@@ -45,7 +45,7 @@ This was the first step towards a more user-friendly interface.
 
 ---
 
-## Lab 9 – Dynamic Boards
+### Lab 9 – Dynamic Boards
 Instead of static images, we added support for **dynamic boards** resembling “Connect the Dots.”  
 Key elements:
 - Boards defined as grids with customizable size and dot placement.
@@ -55,7 +55,7 @@ This opened the way for multi-user scenarios.
 
 ---
 
-## Lab 10 – Drawing Paths on Boards
+### Lab 10 – Drawing Paths on Boards
 Users could now draw their own **individual paths on shared boards**.  
 Key elements:
 - Each logged-in user can load any board created by any user.
@@ -65,7 +65,7 @@ This created a collaborative yet personalized experience.
 
 ---
 
-## Lab 11 – Real-Time Notifications (Backend, SSE)
+### Lab 11 – Real-Time Notifications (Backend, SSE)
 We integrated **Server-Sent Events (SSE)** for real-time updates.  
 Key elements:
 - A dedicated SSE endpoint in Django (`/sse/notifications/`).
@@ -77,7 +77,7 @@ This allowed active users to stay informed without refreshing.
 
 ---
 
-## Lab 12 – Real-Time Notifications (Frontend, SSE)
+### Lab 12 – Real-Time Notifications (Frontend, SSE)
 Finally, we connected the **frontend with SSE** to receive and display live notifications.  
 Key elements:
 - TypeScript `EventSource` integration.
