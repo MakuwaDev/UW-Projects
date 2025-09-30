@@ -6,3 +6,4 @@ This folder contains the projects and assignments from the Introduction to Machi
 
 For detailed information on the course content, please refer to the official syllabus (in Polish):  
 [Introduction to Machine Learning - Syllabus](https://usosweb.mimuw.edu.pl/kontroler.php?_action=katalog2/przedmioty/pokazPrzedmiot&prz_kod=1000-214bWUM)
+asd
