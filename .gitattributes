@@ -1,0 +1,2 @@
+# Ignore Jupyter notebooks in language stats - too much junk, skews statistics
+*.ipynb linguist-detectable=false
