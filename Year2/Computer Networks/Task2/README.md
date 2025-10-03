@@ -62,3 +62,6 @@ The player’s score is the **sum of squared deviations** between their approxim
 - Source code only (no binaries).  
 - Archive in `.zip`, `.rar`, `.7z`, or `.tgz`.  
 - After `make`, the executables `approx-server` and `approx-client` must be produced.
+
+## ⚠️ Disclaimer
+This summary glosses over a lot of important specification and requirements, as the original task is way too complex to compromise thoroughness and simplicity when summarizing it. With any doubts, consult the original task text in Polish.
