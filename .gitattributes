@@ -1,2 +1,5 @@
 # Ignore Jupyter notebooks in language stats - too much junk, skews statistics
 *.ipynb linguist-detectable=false
+
+# Ignore HTML files in language stats - not really a language, too much boilerplate, skews statistics
+*.html linguist-detectable=false
