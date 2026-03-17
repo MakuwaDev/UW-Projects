@@ -1,4 +1,4 @@
-# **Project: Multitask Learning for Geometric Shape Classification and Counting**
+# **Multitask Learning for Geometric Shape Classification and Counting**
 
 ## 1. Overview
 
