@@ -1,0 +1,36 @@
+[package]
+name = "scylladb-drivers-benchmarker"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = { version = "4.5.53", features = ["derive"] }
+sqlite = "0.37.0"
+serde_yml = "0.0.12"
+serde_json = "1"
+serde = { version = "1.0.228", features = ["derive"] }
+plotters = "0.3.3"
+plotters-backend = "0.3.7"
+shell-words = "1.1.0"
+justerror = "1.1.0"
+thiserror = "2.0.17"
+home = "0.5.12"
+wait-timeout = "0.2.1"
+humantime-serde = "1.1.1"
+subprocess = "0.2.13"
+uuid = { version = "1.19.0", features = ["v4"] }
+fs-err = "3.2.2"
+tempfile = "3.23.0"
+html-escape = "0.2.13"
+regex = "1.12.2"
+log = "0.4.29"
+env_logger = "0.11.8"
+
+[dev-dependencies]
+assert_cmd = "2.1.1"
+tempfile = "3.23.0"
+plotters = "0.3.3"
+serial_test = { version = "3.1.1", features = ["file_locks"] }
+image = "0.25.9"
+image-compare = "0.5.0"
+resvg = "0.45.1"

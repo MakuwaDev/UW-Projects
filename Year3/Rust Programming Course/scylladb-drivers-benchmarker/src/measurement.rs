@@ -1,0 +1,44 @@
+use std::fmt::{self, Debug, Display};
+use std::str::FromStr;
+
+use crate::command::{self, CommandParsingError};
+
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub enum MeasurementMethod {
+    Time,
+    Perf,
+    FlameGraph,
+    Command(command::Command),
+}
+
+#[justerror::Error]
+pub enum MeasurementMethodParsingError {
+    #[error(desc = "measuring method, not one of default, and not a command")]
+    ParsingFailed(#[from] CommandParsingError),
+    #[error(desc = "given flame-graph path is not a directory")]
+    FlameGraphNotInADirectory(String),
+}
+
+impl Display for MeasurementMethod {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        match self {
+            MeasurementMethod::FlameGraph => write!(f, "flame-graph"),
+            MeasurementMethod::Perf => write!(f, "perf"),
+            MeasurementMethod::Time => write!(f, "time"),
+            MeasurementMethod::Command(command) => write!(f, "{command}"),
+        }
+    }
+}
+
+impl FromStr for MeasurementMethod {
+    type Err = MeasurementMethodParsingError;
+
+    fn from_str(s: &str) -> Result<Self, Self::Err> {
+        match s {
+            "perf" => Ok(MeasurementMethod::Perf),
+            "flame-graph" => Ok(MeasurementMethod::FlameGraph),
+            "time" => Ok(MeasurementMethod::Time),
+            value => Ok(MeasurementMethod::Command(value.parse()?)),
+        }
+    }
+}
