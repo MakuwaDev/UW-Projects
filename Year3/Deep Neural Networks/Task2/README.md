@@ -1,4 +1,4 @@
-# **Image segmentation without user input** type
+# **Image segmentation without user input**
 
 ## Overview
 This homework has two parts.
