@@ -1,4 +1,4 @@
-# GPT-OSS-20B Transformer Architecture
+# **GPT-OSS-20B Transformer Architecture**
 
 During classes, we discussed the general idea of Transformer blocks and their role in modern language models. In this homework, we will go step by step through a modern decoder-only transformer block, specifically examining the architecture of the GPT-OSS-20B model recently released by OpenAI. You will implement key components of this architecture and train the model using the language modeling objective.
 
